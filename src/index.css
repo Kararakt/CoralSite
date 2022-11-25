@@ -1,0 +1,833 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+a.router-link-active,
+li.router-link-active > a {
+  color: #626262;
+}
+#Header ul li:hover{
+    color: #626262;
+}
+.customBorder{
+    border-radius: 1.5rem;
+}
+.customSecondBorder{
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.main-div--PreviewItemCard .el-card{
+    border: none;
+    border-radius: 1.5rem;
+}
+.activeColorHeart{
+    color: red;
+}
+.HeartClass:hover{
+    color: #ff0000;
+}
+.secondCustomBorder{
+    border-radius: 2rem;
+}
+.Footer ul li{
+    cursor: pointer;
+}
+.iconFooter div{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    background-color: #639599;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.iconFooter div svg{
+    color: #1B4B66;
+}
+.iconFooter #YouTube:hover svg{
+    color: red;
+}
+.mainClassIcon{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #B6B6B6;
+}
+.firstActiveGrid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-top: 1rem;
+    gap:2rem;
+}
+.firstActiveIcon,
+.secondActiveIcon{
+    color: white;
+    background-color: #1B4B66;
+}
+.secondActiveGrid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding-top: 1rem;
+    gap:1.5rem;
+}
+#firstIcon:hover,
+#secondIcon:hover{
+    color: white;
+    background-color: #1B4B66;
+}
+.main-div--PreviewItemCard .el-button{
+    background-color: transparent;
+    border: 2px solid #1B4B66;
+    border-radius: 2rem;
+    height: 3rem;
+}
+.main-div--PreviewItemCard .el-button:focus,
+.main-div--PreviewItemCard .el-button:hover,
+.main-div--PreviewItemCard .el-button:active{
+    border: 2px solid #1B4B66;
+    background-color: #F8F8F8;
+    outline-width: 0rem;
+}
+.divHandBagsSelect .el-input__wrapper{
+    background-color: #F1F1F1;
+    color: #626262;
+    box-shadow: 0 0 0 1px #F1F1F1;
+    font-size: 1rem;
+}
+.divHandBagsSelect .el-input__suffix-inner .el-icon svg{
+    color: #626262; 
+}
+.divHandBagsSelect .el-input__wrapper:hover,
+.divHandBagsSelect .el-select .el-input.is-focus .el-input__wrapper,
+.divHandBagsSelect .el-input .el-input__wrapper.is-focus{
+    box-shadow: 0 0 0 1px #13101E !important;
+}
+.divHandBagsSelect .el-radio__input.is-checked .el-radio__inner{
+    border-color: #1B4B66;
+    background: #1B4B66;
+}
+.divHandBagsSelect .el-radio__input.is-checked+.el-radio__label{
+    color: #1B4B66;
+}
+.divHandBagsSelect .el-radio .el-radio__inner:hover,
+.divHandBagsSelect .el-radio__input.is-focus{
+    border-color: #1B4B66;
+}
+.divHandBagsSelect .el-radio__label {
+    color: #171520;
+}
+.divHandBagsSelect .el-radio__original:focus-visible+.el-radio__inner{
+    outline: 2px solid #639599;
+}
+
+.paginationDiv .el-pagination.is-background .el-pager li:not(.is-disabled).is-active{
+    background-color: #1B4B66;
+}
+.paginationDiv .el-pagination.is-background .btn-next:disabled, 
+.paginationDiv .el-pagination.is-background .btn-prev:disabled{
+    background-color: #F1F1F1;
+    color: #626262;
+    font-size: 1.5rem;
+}
+.paginationDiv .el-pagination.is-background .btn-next, 
+.paginationDiv .el-pagination.is-background .btn-prev, 
+.paginationDiv .el-pagination.is-background .el-pager li{
+    background-color: #1B4B66;
+    color: white;
+}
+.paginationDiv .el-pagination.is-background .el-pager li:not(.is-disabled):hover{
+    background-color: #639599;
+    color: white;
+}
+.paginationDiv .el-pagination.is-background .btn-next:hover:not([disabled]), 
+.paginationDiv .el-pagination.is-background .btn-prev:hover:not([disabled]){
+    color: white;
+}
+.paginationDiv .el-pagination.is-background .el-pager li:not(.is-disabled).is-active{
+    background-color: #639599;
+}
+.divCollapse .el-collapse{
+    border: none;
+}
+.divCollapse .el-collapse .el-collapse-item .el-icon{
+    color: #13101E;
+    font-size: 1.5rem;
+}
+.divCollapse .el-collapse .el-collapse-item__header.focusing:focus:not(:hover){
+    color: #13101E;
+}
+.divCollapse .el-collapse .el-collapse-item__header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding-bottom:  0.5rem;
+}
+.divCollapse .el-collapse .el-collapse-item__wrap{
+    border: none;
+    padding-top: 1rem;
+}
+.divCollapse .el-collapse .el-collapse-item__content{
+    padding: 0rem;
+}
+.divCollapse .el-checkbox .el-checkbox__label,
+.divCollapse .el-checkbox__input.is-checked+.el-checkbox__label{
+    color: #626262;
+    font-size: 1rem;
+}
+.divCollapse .el-checkbox__input.is-checked .el-checkbox__inner{
+    background-color: #1B4B66 ;
+    border-color: #1B4B66
+}
+.divCollapse .el-checkbox__inner:hover{
+    border-color: #1B4B66;
+}
+.divCollapse .el-checkbox__original:focus-visible+.el-checkbox__inner{
+    outline: 0rem;
+}
+.activeImageBorder,
+.imageHoverBorder:hover{
+    border: 1px solid #1B4B66;
+}
+.borderBottomColor{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.secondCustomInput .el-form-item .el-input__wrapper{
+    padding: 1rem 2rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    background-color: #F1F1F1;
+    border: 1px solid #F1F1F1 ;
+    box-shadow: none;
+    color: #626262;
+    font-size: 1.1rem;
+}
+.secondCustomInput .el-form-item  .el-input__inner::placeholder{
+    color: #626262;
+    font-size: 1.2rem;
+}
+.secondCustomInput .el-form-item .el-input-group__append{
+    background-color: #F1F1F1 ;
+    border: 1px solid #F1F1F1 ;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow: none;
+}
+.secondCustomInput .el-input__wrapper:hover,
+.secondCustomInput .el-input__wrapper.is-focus{
+    border-color: #1B4B66;
+}
+.secondCustomInput .el-form-item__error{
+    font-size: 1.2rem;
+}
+.secondCustomInput{
+    display: flex;
+    justify-content: center;
+}
+.quantityCount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #1B4B66 ;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    width: 30%;
+}
+.codeCard{
+    border: 1px solid #1B4B66 ;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    display: flex;
+    gap:2rem;
+    justify-content: space-between;
+}
+.bodyCodeCard{
+    padding: 1.5rem 2.5rem;
+    background-color: #F1F1F1;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+    align-items: center;
+}
+.btnAddToCart{
+    background-color: #1B4B66;
+    border: 2px solid #1B4B66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap:1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.btnAddToWishList{
+    background-color: white;
+    border: 2px solid #1B4B66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap:1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.tabAboutProduct,
+.spanHover:hover{
+    border-radius: 2rem;
+    background-color: #1B4B66;
+    color: white;
+}
+.borderColor{
+    border: 1px solid  #F1F1F1;
+    border-radius: 1.5rem;
+}
+.divRate .el-rate .el-rate__item .el-icon svg{
+    font-size: 1.5rem;
+    gap:1rem;
+}
+.thirdCustomInput .el-form-item .el-input__wrapper{
+    padding: 1rem 2rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    background-color: #F1F1F1;
+    border: 1px solid #F1F1F1 ;
+    box-shadow: none;
+    color: #626262;
+    font-size: 1.1rem;
+    width: 50%;
+}
+.thirdCustomInput .el-form-item  .el-input__inner::placeholder{
+    color: #626262;
+    font-size: 1.2rem;
+}
+.thirdCustomInput .el-form-item .el-input-group__append{
+    background-color: #F1F1F1 ;
+    border: 1px solid #F1F1F1 ;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow: none;
+}
+.thirdCustomInput .el-input__wrapper:hover,
+.thirdCustomInput .el-input__wrapper.is-focus{
+    border-color: #1B4B66;
+}
+.thirdCustomInput .el-form-item__error{
+    font-size: 1.2rem;
+}
+.btnCart{
+    border: 2px solid #1B4B66;
+    background-color: #1B4B66;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    padding: 1rem 2.5rem;
+}
+.secondBtnCart{
+    border: 2px solid #1B4B66;
+    background-color: white;
+    color: #1B4B66;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.btnCart:hover,
+.btnCart:focus,
+.brnCart:active{
+    background-color: white;
+    color: #1B4B66;
+}
+.secondBtnCart:hover,
+.secondBtnCart:focus,
+.secondBtnCart:active{
+    background-color: #1B4B66;
+    color: white;
+}
+.formItemLabel{
+    color: #171520;
+    font-size: 1.3rem;
+}
+.customBorderRadius{
+    border: 2px solid #1B4B66;
+    border-radius: 2rem;
+}
+.mainDivApp{
+    display: flex;
+    flex-direction: column;
+}
+.contentRouter{
+    flex-grow: 1;
+}
+.tabUser{
+    border-left: 6px solid #1B4B66 ;
+}
+.btnDelete{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid red;
+    border-radius: 1rem;
+    padding: 1rem 2.5rem;
+    color: red;
+    font-size: 1.3rem;
+}
+.borderTop{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.borderBottom{
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+#Footer a.router-link-active{
+    color: white;
+}
+
+
+
+
+@media(max-width: 600px){
+    .divFooter,
+    #Footer{
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+        padding: 0rem 1rem;
+    }
+    #Footer{
+        padding-top: 2rem;
+    }
+    .iconFooter{
+        display: flex;
+        align-self: center;
+    }
+    .paddingBottom{
+        padding-bottom: 4rem;
+    }
+    .spaceBetween{
+        padding: 0rem 0.5rem;
+    }
+    .colorTextHomePage{
+        font-size: 1.5rem;
+    }
+    .textCustom{
+        padding: 0.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    .picCarousel{
+        left: 5%;
+    }
+    .textPaddingGap{
+        padding: 1rem;
+    }
+    .cardFlex{
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 1rem;
+    }
+    .gridPicBrands{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .paddingTop{
+        padding-top: 4rem;
+    }
+    .flexGap{
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 1rem;
+    }
+    .customPadding{
+        padding: 0rem 1rem;
+    }
+    .picFirstRelative{
+        top:0.1rem;
+        gap:0.3rem;
+    }
+    .picSecondRelative{
+        top:0.2rem;
+    }
+    .textFooter{
+        align-self: center;
+    }
+    .imageHandbag{
+        height: 13rem;
+    }
+    .handbagPic h1,
+    .handbagPic span{
+        font-size: 1.5rem;
+    }
+    .handbagPic{
+        right: 5%;
+    }
+    .mainCol{
+        display: flex;
+        flex-direction: column;
+    }
+    #firstIcon,
+    #secondIcon{
+        display: none;
+    }
+    .colMenu{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap:1rem;
+    }
+    .textCenter{
+        display: flex;
+        justify-content: center;
+    }
+    .divHandBagsSelect{
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+        gap:1rem;
+        width: 100%;
+    }
+    .firstActiveGrid{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+    .paginationDiv{
+        padding-bottom: 2rem;
+    }
+    .paddingX{
+        padding: 4rem 1rem;
+    }
+    .clearFlex{
+        display: flex;
+        flex-direction: column;
+    }
+    .clearGap{
+        gap:1rem;
+    }
+    .formPadding{
+        padding: 1rem 0.5rem;
+    }
+    .clearFlexReverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .btnPosition{
+       text-align: center;
+       padding-bottom: 2.5rem;
+    }
+    .footerText{
+        text-align: center;
+    }
+    .locationProduct{
+        display: flex;
+        gap:0.5rem;
+        font-size: 1.5rem;
+    }
+    .picProduct{
+        height: 4rem;
+        width: auto;
+    }
+    .quantityCount{
+       padding: 1rem 2rem;
+       width: auto;
+       display: flex;
+       gap:0.5rem;
+    }
+    .tabHeight{
+        height: 15rem;
+        gap: 2rem;
+        padding-top: 2.5rem;
+    }
+    .clearPaddingX{
+        padding: 2rem 1rem;
+    }
+    .secondPaddingTop{
+        padding-top: 1.5rem;
+    }
+    .smallText{
+        font-size: 1rem;
+    }
+    .iconPadding{
+        padding: 0rem 0.5rem;
+    }
+    .secondPaddingX{
+        padding: 4rem 0.5rem;
+    }
+    .itemPosition{
+        display: flex;
+        align-items: center;
+    }
+    .justifyPosition{
+        display: flex;
+        justify-content: center;
+    }
+    .inputWidth{
+        width: 100%;
+    }
+    .startItems{
+        display: flex;
+        align-items: flex-start;
+    }
+    .imageAboutPage{
+        height: 10rem;
+    }
+    .textPositionAbout{
+        top: 10%;
+        left: 5%;
+        right: 5%;
+    }
+    .textEnd{
+        text-align: end;
+    }
+}
+
+@media(min-width: 601px) and (max-width:1024px){
+    .divFooter{
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+        padding: 4rem 1rem;
+    }
+    .iconFooter{
+        display: flex;
+        justify-content: center;
+    }
+    .textFooter{
+        align-self: center;
+    }
+    .footerText{
+        text-align: center;
+    }
+    .clearGrid{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .clearGap{
+        gap:1rem;
+    }
+    .paddingX{
+        padding: 4rem 1rem;
+    }
+    .PadX{
+        padding: 0rem 1rem;
+    }
+    .clearSecondGrid{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .picFirstRelative{
+        top: 15%;
+        left: 5%;
+        gap:0.3rem;
+    }
+    .picSecondRelative{
+        top: 20%;
+    }
+    .clearFlex{
+        display: flex;
+        flex-direction: column;
+    }
+    .imageHandbag{
+        height: 13rem;
+    }
+    .handbagPic h1,
+    .handbagPic span{
+        font-size: 1.5rem;
+    }
+    .handbagPic{
+        right: 5%;
+    }
+    .mainCol{
+        display: flex;
+        flex-direction: column;
+    }
+    #firstIcon,
+    #secondIcon{
+        display: none;
+    }
+    .colMenu{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap:1rem;
+    }
+    .firstActiveGrid{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+    .paginationDiv{
+        padding-bottom: 2rem;
+    }
+    .firstActiveGrid{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 2rem 0rem;
+        gap:1rem;
+    }
+    .textPositionAbout{
+        top: 10%;
+        left: 5%;
+        right: 5%;
+    }
+    .textEnd{
+        text-align: end;
+    }
+    .imageHandbag{
+        height: auto;
+    }
+    .marginRemove{
+        margin: 0rem;
+    }
+    .tabHeight{
+        height: 15rem;
+        gap: 2rem;
+        padding-top: 2.5rem;
+    }
+    .textCustom{
+        width: 100%;
+        text-align: center;
+     }
+}
+
+@media (min-width:1025px) and (max-width:1279px){
+    .textCustom{
+       width: 100%;
+       text-align: center;
+    }
+    .PadX{
+        padding: 0rem 1rem;
+    }
+    .cardAll{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 3rem 1rem;
+    }
+    .divFooter{
+        padding: 3rem 1rem;
+    }
+    .textEnd{
+        text-align: end;
+    }
+    .handbagPic{
+        right: 5%;
+    }
+    .mainClassIcon{
+        display: none;
+    }
+    .customGap{
+        gap:1.5rem;
+    }
+    .picProduct{
+        height: 6rem;
+    }
+    .firstActiveGrid{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .mainCol{
+        gap:2.5rem;
+    }
+    .gridTwo{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .paddingX{
+        padding: 4rem 1rem;
+    }
+    .secondPaddingX{
+        padding: 4rem 0.5rem;
+    }
+   
+}
+   
+@media (max-width:1280px){  
+    #header {
+    position: absolute;
+    top: 2.8rem;
+    right: 2.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 40;
+    }
+  
+  #header::before {
+    content: "";
+    position: absolute;
+    width: 1.563rem;
+    height: 0.2rem;
+    background: #1B4B66;
+    transform: translateY(-0.625rem);
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+    
+  #header::after {
+    content: "";
+    position: absolute;
+    width: 1.563rem;
+    height: 0.2rem;
+    background: #1B4B66;
+    box-shadow: 0 0.625rem 0 0;
+    color: #1B4B66;
+    transition: 0.4s;
+      }
+  
+  .active#header::before {
+      transform: rotate(45deg);
+      transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  
+  .active#header::after {
+      transform: rotate(-45deg);
+      transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      box-shadow: none;
+    }
+  
+  #menu {
+      position: fixed;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100vh;
+      background: #639599;
+      z-index: 30;
+      padding-top: 1rem;
+      display: flex;
+      align-items: flex-start;
+    }
+  #menu ul {
+      position: relative;
+      margin-top: 3.125rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
+      height: auto;
+    }
+  #menu ul li {
+      list-style: none;
+      color: white;
+      padding: 0.938rem 2.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  .active#menu {
+      left: 0;
+    }
+  #menu.active::after {
+      font-size: 0rem;
+    }
+}
