@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { Search } from "@element-plus/icons-vue";
-const textInputHeader = ref("");
 function activeHeader() {
   document.getElementById("header")!.classList.toggle("active");
   document.getElementById("menu")!.classList.toggle("active");
