@@ -391,6 +391,14 @@ li.router-link-active > a {
 #Footer a.router-link-active{
     color: white;
 }
+.collapse-enter-active {
+    transition: all 0.4s ease-out;
+}
+  .collapse-enter-from,
+  .collapse-leave-to {
+    transition: all 0.4s ease-out;
+    opacity: 0;
+}
 
 
 

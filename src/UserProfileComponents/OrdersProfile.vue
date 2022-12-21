@@ -7,6 +7,7 @@ import {
   searchOrderHasItem,
 } from "../modules/OrdersHelper";
 import Collapse from "../components/Collapse.vue";
+const visible = ref(false);
 </script>
 <template>
   <div v-if="activeUserTab === 3" class="flex flex-col gap-10">
@@ -32,7 +33,7 @@ import Collapse from "../components/Collapse.vue";
         :key="item.id"
         v-if="searchOrderHasItem"
       >
-        <Collapse
+        <Collapse v-model="visible"
           ><template #header>
             <div
               class="bg-[#F1F1F1] borderTop cursor-pointer py-6 grid grid-cols-5 clearFlex text-xl font-bold text-[#171520] text-center"
